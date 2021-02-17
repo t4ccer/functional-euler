@@ -47,3 +47,8 @@ fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
 isDivisorOf :: Integral a => a -> a -> Bool
 isDivisorOf a b = a `mod` b == 0
+
+isPalindrome :: Show a => a -> Bool
+isPalindrome n = s == reverse s
+  where s = show n
+
