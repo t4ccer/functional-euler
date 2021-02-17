@@ -31,7 +31,7 @@ isComposite :: Int -> Bool
 isComposite = not . isPrime
 
 primes :: [Int]
-primes = filter isPrime [2..]
+primes = 2 : filter isPrime [3,5..]
 
 isquare :: Num a => a -> a
 isquare x = x * x
