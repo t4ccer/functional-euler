@@ -1,4 +1,4 @@
-module Problems.Problem1 where
+module Problems.Problem1 (problem1) where
 
 import           Lib
 

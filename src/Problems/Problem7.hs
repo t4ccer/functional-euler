@@ -1,5 +1,5 @@
 {-# LANGUAGE NumericUnderscores #-}
-module Problems.Problem7 where
+module Problems.Problem7 (problem7) where
 
 import           Lib
 
