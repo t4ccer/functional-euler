@@ -45,3 +45,4 @@ lstProd xs ys = [(x, y) | x <- xs, y <- ys]
 fibs :: [Int]
 fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
+isDivisorOf a b = a `mod` b == 0
