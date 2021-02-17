@@ -41,3 +41,7 @@ double x = 2 * x
 
 lstProd :: [a] -> [b] -> [(a, b)]
 lstProd xs ys = [(x, y) | x <- xs, y <- ys]
+
+fibs :: [Int]
+fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
+
