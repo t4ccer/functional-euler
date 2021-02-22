@@ -2,6 +2,7 @@ module Main where
 
 import           Lib
 import           Problems.Problem1
+import           Problems.Problem10
 import           Problems.Problem2
 import           Problems.Problem3
 import           Problems.Problem4
@@ -24,5 +25,6 @@ main = do
   solve "Problem 7" problem7
   solve "Problem 8" problem8
   solve "Problem 9" problem9
+  solve "Problem 10" problem10
   solve "Problem 46" problem46
   solve "Problem 48" problem48
