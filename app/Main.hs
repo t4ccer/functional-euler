@@ -10,6 +10,7 @@ import           Problems.Problem48
 import           Problems.Problem5
 import           Problems.Problem6
 import           Problems.Problem7
+import           Problems.Problem8
 
 main :: IO ()
 main = do
@@ -20,5 +21,6 @@ main = do
   solve "Problem 5" problem5
   solve "Problem 6" problem6
   solve "Problem 7" problem7
+  solve "Problem 8" problem8
   solve "Problem 46" problem46
   solve "Problem 48" problem48
