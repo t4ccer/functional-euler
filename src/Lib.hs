@@ -52,3 +52,9 @@ isPalindrome :: Show a => a -> Bool
 isPalindrome n = s == reverse s
   where s = show n
 
+sum3 :: Num a => (a, a, a) -> a
+sum3 (a,b,c) = a+b+c
+
+prod3 :: Num a => (a, a, a) -> a
+prod3 (a,b,c) = a*b*c
+
