@@ -2,7 +2,9 @@
 module Lib where
 
 import           Data.Foldable
+import           Data.Function
 import           GHC.Float.RealFracMethods
+
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
 
@@ -61,3 +63,5 @@ sum3 (a,b,c) = a+b+c
 prod3 :: Num a => (a, a, a) -> a
 prod3 (a,b,c) = a*b*c
 
+maximumOn :: (Foldable t, Ord a1) => (a2 -> a1) -> t a2 -> a2
+maximumOn p = maximumBy (compare `on` p)
