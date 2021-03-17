@@ -9,6 +9,7 @@ import           Problems.Problem2
 import           Problems.Problem25
 import           Problems.Problem27
 import           Problems.Problem3
+import           Problems.Problem39
 import           Problems.Problem4
 import           Problems.Problem46
 import           Problems.Problem48
@@ -34,5 +35,6 @@ main = do
   solve "Problem 16" problem16
   solve "Problem 25" problem25
   solve "Problem 27" problem27
+  solve "Problem 39" problem39
   solve "Problem 46" problem46
   solve "Problem 48" problem48
