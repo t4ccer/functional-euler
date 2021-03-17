@@ -45,6 +45,9 @@ lstProd xs ys = [(x, y) | x <- xs, y <- ys]
 fibs :: [Int]
 fibs = 0 : 1 : zipWith (+) fibs (tail fibs)
 
+fibsL :: [Integer]
+fibsL = 0 : 1 : zipWith (+) fibsL (tail fibsL)
+
 isDivisorOf :: Integral a => a -> a -> Bool
 isDivisorOf a b = a `mod` b == 0
 
