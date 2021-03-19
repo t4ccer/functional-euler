@@ -65,3 +65,7 @@ prod3 (a,b,c) = a*b*c
 
 maximumOn :: (Foldable t, Ord a1) => (a2 -> a1) -> t a2 -> a2
 maximumOn p = maximumBy (compare `on` p)
+
+count :: (a -> Bool) -> [a] -> Int
+count p = length . filter p
+
