@@ -7,5 +7,5 @@ import           Lib
 -- n/φ(n) is increasing series when n is product of consecutive primes
 
 problem69 :: Int
-problem69 = last $ takeWhile (<=1_000_000) $ map (\p -> product' $ take p primes) [1..]
+problem69 = last $ takeWhile (<=1_000_000) $ scanl1 (*) primes
 
