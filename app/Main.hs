@@ -25,6 +25,7 @@ import           Problems.Problem69
 import           Problems.Problem7
 import           Problems.Problem8
 import           Problems.Problem9
+import           Problems.Problem97
 -- INSERT_IMP
 
 main :: IO ()
@@ -54,3 +55,4 @@ main = do
   solve "Problem 50" problem50
   solve "Problem 55" problem55
   solve "Problem 69" problem69
+  solve "Problem 97" problem97
