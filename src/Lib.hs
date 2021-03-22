@@ -69,3 +69,30 @@ maximumOn p = maximumBy (compare `on` p)
 count :: (a -> Bool) -> [a] -> Int
 count p = length . filter p
 
+isect3 :: Ord a => [a] -> [a] -> [a] -> [a]
+isect3 xs ys zs = isect zs $ isect xs ys
+
+-- Stolen from data-ordlist
+
+-- |  The 'isect' function computes the intersection of two ordered lists.
+-- An element occurs in the output as many times as the minimum number of
+-- occurrences in either input.  If either input is a set,  then the output
+-- is a set.
+--
+-- > isect [ 1,2, 3,4 ] [ 3,4, 5,6 ]   == [ 3,4 ]
+-- > isect [ 1, 2,2,2 ] [ 1,1,1, 2,2 ] == [ 1, 2,2 ]
+isect :: Ord a => [a] -> [a] -> [a]
+isect = isectBy compare
+
+-- |  The 'isectBy' function is the non-overloaded version of 'isect'.
+isectBy :: (a -> b -> Ordering) -> [a] -> [b] -> [a]
+isectBy cmp = loop
+  where
+     loop [] _ys  = []
+     loop _xs []  = []
+     loop (x:xs) (y:ys)
+       = case cmp x y of
+          LT ->     loop xs (y:ys)
+          EQ -> x : loop xs ys
+          GT ->     loop (x:xs) ys
+
