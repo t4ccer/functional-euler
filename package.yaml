@@ -29,6 +29,7 @@ executables:
     - -Wno-unused-do-bind
     - -Wpartial-fields
     - -Wincomplete-uni-patterns
+    - -O2
     dependencies:
     - project-euler
 

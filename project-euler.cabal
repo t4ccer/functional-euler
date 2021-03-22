@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 7fcfa190f39476606c204e0b538980e0e61fe061ec48951eabb2a3ca2532859b
+-- hash: e3568536792fd70c59ba83bb5fe40dad33d866c56c91778f1da57ebfde1725bb
 
 name:           project-euler
 version:        0.1.0.0
@@ -41,6 +41,7 @@ library
       Problems.Problem39
       Problems.Problem4
       Problems.Problem42
+      Problems.Problem45
       Problems.Problem46
       Problems.Problem48
       Problems.Problem5
@@ -66,7 +67,7 @@ executable project-euler-exe
       Paths_project_euler
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -Wno-unused-do-bind -Wpartial-fields -Wincomplete-uni-patterns
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -Wall -Wno-unused-do-bind -Wpartial-fields -Wincomplete-uni-patterns -O2
   build-depends:
       base >=4.10.0 && <5
     , project-euler
