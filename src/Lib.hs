@@ -69,6 +69,9 @@ maximumOn p = maximumBy (compare `on` p)
 count :: (a -> Bool) -> [a] -> Int
 count p = length . filter p
 
+headThat :: (a -> Bool) -> [a] -> a
+headThat p = head . filter p
+
 isect3 :: Ord a => [a] -> [a] -> [a] -> [a]
 isect3 xs ys zs = isect zs $ isect xs ys
 
