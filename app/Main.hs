@@ -30,11 +30,13 @@ import           Problems.Problem7
 import           Problems.Problem8
 import           Problems.Problem9
 import           Problems.Problem97
+import Problems.Problem13
 -- INSERT_IMP
 
 main :: IO ()
 main = do
 -- INSERT_CALL
+  solve "Problem 13" problem13
   solve "Problem 1" problem1
   solve "Problem 2" problem2
   solve "Problem 3" problem3
