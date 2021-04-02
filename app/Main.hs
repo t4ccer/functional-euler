@@ -3,6 +3,7 @@ module Main where
 import           Lib
 import           Problems.Problem1
 import           Problems.Problem10
+import           Problems.Problem13
 import           Problems.Problem14
 import           Problems.Problem15
 import           Problems.Problem16
@@ -36,7 +37,6 @@ import Problems.Problem13
 main :: IO ()
 main = do
 -- INSERT_CALL
-  solve "Problem 13" problem13
   solve "Problem 1" problem1
   solve "Problem 2" problem2
   solve "Problem 3" problem3
@@ -47,6 +47,7 @@ main = do
   solve "Problem 8" problem8
   solve "Problem 9" problem9
   solve "Problem 10" problem10
+  solve "Problem 13" problem13
   solve "Problem 14" problem14
   solve "Problem 15" problem15
   solve "Problem 16" problem16
