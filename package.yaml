@@ -30,6 +30,7 @@ executables:
     - -Wpartial-fields
     - -Wincomplete-uni-patterns
     - -O2
+    - -Wno-type-defaults 
     dependencies:
     - project-euler
 

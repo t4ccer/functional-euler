@@ -8,6 +8,12 @@ import           GHC.Float.RealFracMethods
 someFunc :: IO ()
 someFunc = putStrLn "someFunc"
 
+fact :: (Num a, Enum a) => a -> a
+fact n = product' [1..n]
+
+choose :: Integral a => a -> a -> a
+choose n k = div (fact n) (fact k * fact (n-k))
+
 sum' :: (Foldable t, Num a) => t a -> a
 sum' = foldl' (+) 0
 
