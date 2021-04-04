@@ -35,6 +35,7 @@ import           Problems.Problem69
 import           Problems.Problem7
 import           Problems.Problem8
 import           Problems.Problem9
+import           Problems.Problem92
 import           Problems.Problem97
 -- INSERT_IMP
 
@@ -73,6 +74,7 @@ main = do
   solve "Problem 53" problem53
   solve "Problem 55" problem55
   solve "Problem 69" problem69
+  solve "Problem 92" problem92
   solve "Problem 97" problem97
   solve "Problem 206" problem206
   solve "Problem 686" problem686
