@@ -5,8 +5,8 @@ import           Data.Foldable
 import           Data.Function
 import           GHC.Float.RealFracMethods
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
+allTheSame :: (Eq a) => [a] -> Bool
+allTheSame xs = all (== head xs) (tail xs)
 
 fact :: (Num a, Enum a) => a -> a
 fact n = product' [1..n]
