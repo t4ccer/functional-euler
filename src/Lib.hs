@@ -1,6 +1,7 @@
 {-# LANGUAGE ScopedTypeVariables #-}
 module Lib where
 
+import           Data.Char
 import           Data.Foldable
 import           Data.Function
 import           GHC.Float.RealFracMethods
@@ -104,4 +105,9 @@ isectBy cmp = loop
           LT ->     loop xs (y:ys)
           EQ -> x : loop xs ys
           GT ->     loop (x:xs) ys
+
+-- End of data-ordlist
+
+digs :: Int -> [Int]
+digs = map (subtract 48 . ord) . show
 
